@@ -9,4 +9,13 @@ A Chrome extension to login to SonicWall for NITT.
 
 Login credentials are required for starting first time. The extension checks every 30 minutes if the computer is logged in.
 
-### This extension is not available in the Chrome Webstore. To install it, download the crx file from [here](https://www.dropbox.com/s/s3mrln8qcidb4bw/SonicWall-Login.crx?dl=0). Open it using Chrome to install.
+### This extension is not available in the Chrome Webstore. To install, follow the instructions below.
+
+1. Download and extract the zip file to a new folder named SonicWall-Login.
+2. Go to extensions page in chrome.
+3. Toggle the developer mode (top-right).
+4. Click 'Load Unpacked extension'
+5. Select the SonicWall-Login folder.
+6. Logout from SonicWall.
+7. Click on SonicWall logo on the right and enter your credentials.
+8. You will be logged in to SonicWall.

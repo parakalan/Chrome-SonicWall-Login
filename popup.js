@@ -22,8 +22,12 @@ function isLoggedIn(str) {
 		$('#logged_in').show();
 		$('.loader').hide();
 		$('.login-page').hide();
+		$('.info').html("");
+		if(localStorage.getItem('username') == null)
+			init();
 	}
 	else {
+		$('.info').html("");
 		init();	
 	}
 }
@@ -121,8 +125,13 @@ function authenticate(d) {
 	});
 
 	request.done(function(data){
-		console.log(data);
-		getLoginStatus();
+		if(data.indexOf("top.location.href = 'auth.html'") !== -1) {
+			$('.loader').hide();
+			$('.info').html('<center>Wrong credentials</center>');
+			$('.login-page').show();
+		}
+		else
+			getLoginStatus();
 	});
 }
 
