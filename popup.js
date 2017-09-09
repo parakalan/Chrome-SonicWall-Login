@@ -3,6 +3,7 @@ BASE_URL = 'https://192.168.20.1'
 function init() {
 	if (localStorage.getItem('username') == null) {
 		$('.login-page').show();
+		$('.loader').hide();
 	}
 	else {
 		getHtml();
