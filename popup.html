@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>SonicWall Login</title>
+		<script src="md5.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="background.js"></script>
+		<script src="popup.js"></script>
+		<link rel="stylesheet" type="text/css" href="popup.css">
+	</head>
+	<body>
+		<div class="heading"><center><h1>SonicWall Login</h1></center></div>
+		<div class="login-page" style="display: none;">
+  			<div class="form">
+    			<div class="login-form" >
+      				<input type="text" id="username" placeholder="Username"/>
+      				<input type="password" id="password" placeholder="Password"/>
+      				<button id="save">Login</button>
+    			</div>
+  			</div>
+		</div>
+		<div class="loader"></div>
+		<div style="display: none;" id="logged_in"> 
+			<img id="connected" src="connected.png"/>
+			<div><center>You are logged in to SonicWall</center></div>
+		</div>
+	</body>
+</html>
